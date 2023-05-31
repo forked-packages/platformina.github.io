@@ -9,8 +9,10 @@ jobs:
     steps:
       # Checks-out your repository
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      # Minify coede
+      # Minify code
       #- name: Minify
       #  uses: anthonyftwang/minify-action@v1.0.1
 
