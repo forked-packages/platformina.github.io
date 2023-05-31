@@ -1,7 +1,7 @@
 name: Minify Code
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, fix-failure-to-render ]
 
 jobs:
   minify:
