@@ -15,6 +15,13 @@ jobs:
       # Minify code
       #- name: Minify
       #  uses: anthonyftwang/minify-action@v1.0.1
+      - name: Set up Minify Actions
+        uses: amireshoon/minifyAction@main
+        with:
+          repo: $prepo
+      - name: Minifying Codes
+        run: |
+          minifier.sh $prepo
 
       # Auto-commit to branch "production"
       - uses: stefanzweifel/git-auto-commit-action@v4
